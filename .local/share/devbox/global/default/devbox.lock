@@ -1184,54 +1184,6 @@
         }
       }
     },
-    "mpv@latest": {
-      "last_modified": "2025-03-11T17:52:14Z",
-      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#mpv",
-      "source": "devbox-search",
-      "version": "0.39.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/0fl9926d0wxzjd4i11kg8j3fzps6j95i-mpv-with-scripts-0.39.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/0fl9926d0wxzjd4i11kg8j3fzps6j95i-mpv-with-scripts-0.39.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/nwv461r4w8d20y1n1rq2mrm7x2xzrhc6-mpv-with-scripts-0.39.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/nwv461r4w8d20y1n1rq2mrm7x2xzrhc6-mpv-with-scripts-0.39.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/pf15z2czw45jbyl890v9krvncxrp04sk-mpv-with-scripts-0.39.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/pf15z2czw45jbyl890v9krvncxrp04sk-mpv-with-scripts-0.39.0"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/yya61y3wrmh4n1apfg8vyk1v2pds0b08-mpv-with-scripts-0.39.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/yya61y3wrmh4n1apfg8vyk1v2pds0b08-mpv-with-scripts-0.39.0"
-        }
-      }
-    },
     "neovim@latest": {
       "last_modified": "2025-02-07T11:26:36Z",
       "resolved": "github:NixOS/nixpkgs/d98abf5cf5914e5e4e9d57205e3af55ca90ffc1d#neovim",
@@ -1822,54 +1774,6 @@
             }
           ],
           "store_path": "/nix/store/jg177aaczad8jf3520hhlhwqzzqg4x24-wget-1.25.0"
-        }
-      }
-    },
-    "yazi@latest": {
-      "last_modified": "2025-02-27T15:48:43Z",
-      "resolved": "github:NixOS/nixpkgs/6c5c5f5100281f8f4ff23f13edd17d645178c87c#yazi",
-      "source": "devbox-search",
-      "version": "25.2.26",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/1lgfjs0g4g9g90crfd0bm61mcc208x5l-yazi-25.2.26",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/1lgfjs0g4g9g90crfd0bm61mcc208x5l-yazi-25.2.26"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qmv4xpgy85avh4r7pzypdrdhvs97qkc0-yazi-25.2.26",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/qmv4xpgy85avh4r7pzypdrdhvs97qkc0-yazi-25.2.26"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/ghzpsfkmlwkgg2px0mn9cpjbmkyc2n71-yazi-25.2.26",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/ghzpsfkmlwkgg2px0mn9cpjbmkyc2n71-yazi-25.2.26"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/lwda8c8nkblg2yjac7n5lhlx5gz0ldhj-yazi-25.2.26",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/lwda8c8nkblg2yjac7n5lhlx5gz0ldhj-yazi-25.2.26"
         }
       }
     },

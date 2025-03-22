@@ -1,5 +1,5 @@
 # Activate devbox global packages
-eval "$(devbox global shellenv --init-hook)"
+eval "$(devbox global shellenv --init-hook --preserve-path-stack -r)" && hash -r
 
 # Initialize Starship prompt
 eval "$(starship init zsh)"
