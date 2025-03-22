@@ -27,13 +27,14 @@
     "lazygit@latest",
     "rustup@latest",
     "age@latest",
-    "kubectl@latest",
     "k9s@latest",
     "kubernetes-helm@latest",
     "stow@latest",
     "teller@latest",
     "gum@latest",
-    "fish@latest"
+    "fish@latest",
+    "kubecolor@latest",
+    "kubectl@latest"
   ],
   "shell": {
     "init_hook": [
