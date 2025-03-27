@@ -1,22 +1,37 @@
-# https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#!/bin/zsh
 
-# https://ghostty.org/docs/install/binary#homebrew
-brew install --cask ghostty
+# Install Homebrew if not installed
+if ! command -v brew &>/dev/null; then
+  echo "Homebrew not found. Installing it now..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# https://github.com/nikitabobko/AeroSpace?tab=readme-ov-file#installation
-brew install --cask nikitabobko/tap/aerospace
+# Install gum if not installed
+if ! command -v gum &>/dev/null; then
+  echo "gum not found. Installing it now..."
+  brew install gum
+fi
 
-# https://github.com/FelixKratz/JankyBorders?tab=readme-ov-file#install
-brew tap FelixKratz/formulae && brew install borders
+# Menu options
+declare -A choices
 
-# https://github.com/zen-browser/desktop?tab=readme-ov-file#macos
-brew install --cask zen-browser
+choices=(
+  ["Ghostty"]="brew install --cask ghostty"
+  ["AeroSpace"]="brew install --cask nikitabobko/tap/aerospace"
+  ["JankyBorders"]="brew tap FelixKratz/formulae && brew install borders"
+  ["ZenBrowser"]="brew install --cask zen-browser"
+  ["BraveBrowser"]="brew install --cask brave-browser"
+  ["Devbox"]="curl -fsSL https://get.jetify.com/devbox | bash"
+)
 
-# https://formulae.brew.sh/cask/brave-browser
-brew install --cask brave-browser
+# User selection using gum
+echo "Select the packages to install using the spacebar and press Enter when done:"
+selection=$(gum choose --no-limit ${(k)choices} $(for i in ${(k)choices}; do echo "--selected" $i; done))
 
-# https://jetify-com.vercel.app/docs/devbox/installing_devbox/?install-method=macos
-curl -fsSL https://get.jetify.com/devbox | bash
-
-echo "## Installation done!" | gum format
+# Run selected installations
+for item in ${(f)selection}; do
+  echo "# Installing $item..." | gum format 
+  eval "${choices[$item]}"
+done
+echo "\n\n"
+echo "## Installation Complete!" | gum format
