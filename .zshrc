@@ -15,4 +15,3 @@ if [[ "$TERM" == "xterm-ghostty" ]]; then
   eval "$(zellij setup --generate-auto-start zsh)"
 fi
 
-export PATH=/opt/homebrew/bin:$PATH

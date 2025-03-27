@@ -9,3 +9,4 @@ if status is-interactive
     # Unset the default fish greeting text which messes up Zellij
     set fish_greeting
 end
+eval "$(/opt/homebrew/bin/brew shellenv)"

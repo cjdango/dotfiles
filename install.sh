@@ -1,3 +1,6 @@
+# https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # https://ghostty.org/docs/install/binary#homebrew
 brew install --cask ghostty
 
@@ -10,6 +13,7 @@ brew tap FelixKratz/formulae && brew install borders
 # https://github.com/zen-browser/desktop?tab=readme-ov-file#macos
 brew install --cask zen-browser
 
+# https://formulae.brew.sh/cask/brave-browser
 brew install --cask brave-browser
 
 # https://jetify-com.vercel.app/docs/devbox/installing_devbox/?install-method=macos
